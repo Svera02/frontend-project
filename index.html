@@ -5,15 +5,67 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+  <link rel="stylesheet" href="./src/styles/base/fonts.css" />
 
     <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
+      @import url('/src/styles/colors/light.css');
     </style>
     <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
+      @import url('/src/styles/colors/dark.css');
     </style>
+    <link rel="stylesheet" href="./src/styles/components/header.css"/>
   </head>
+  </head>
+
   <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__top-inner">
+          <p class="header__promo">
+            Afterpay, Laybuy & Genoapay | Free Delivery New Zealand + Australia*
+          </p>
+          <div class="header__actions">
+            <a href="#" class="header__link">Sign In / Register</a>
+            <div class="header__lang">
+              <img src="./public/icons/flag.svg" alt="Language" class="header__flag" />
+              <span class="header__currency">USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="header__bottom">
+        <div class="container header__bottom-inner">
+          <div class="header__logo">
+            <img src="./public/icons/logo.svg" alt="GOOD4ME" />
+          </div>
+
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active">HOME</a>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">SHOP</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">FAQ'S</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">STOCKISTS</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">WHOLESALE</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">CONTACT</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__icons">
+            <button class="header__search">
+              <img src="./public/icons/finder.svg" alt="Search" />
+            </button>
+            <button class="header__cart">
+              <img src="./public/icons/buy.svg" alt="Cart" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
+

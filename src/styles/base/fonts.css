@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+:root {
+  --font-family: 'Jost', sans-serif;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-regular);
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.text-regular {
+  font-weight: var(--font-regular);
+}
+
+.text-medium {
+  font-weight: var(--font-medium);
+}
+
+.text-semibold {
+  font-weight: var(--font-semibold);
+}
