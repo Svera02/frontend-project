@@ -1,8 +1,7 @@
-
 :root {
   --color-dark: #2a254b;
   --color-accent: #f6623e;
-  --color-light: #ffffff;
+  --color-light: #fff;
   --border-default: #ddd;
 }
 
@@ -85,7 +84,6 @@
   color: var(--color-accent);
 }
 
-
 .header__icons {
   display: flex;
   align-items: center;
@@ -97,7 +95,7 @@
   height: 20px;
 }
 
-@media (max-width: 992px) {
+@media (width <= 992px) {
   .nav__list {
     gap: 20px;
   }
@@ -114,7 +112,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .nav__list {
     flex-direction: column;
     align-items: center;
@@ -125,4 +123,3 @@
     gap: 12px;
   }
 }
-
