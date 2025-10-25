@@ -12,8 +12,7 @@
 .header__top {
   background-color: var(--color-accent);
   color: var(--color-light);
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: var(--font-regular);
   padding: 8px 20px;
 }
 
@@ -73,7 +72,7 @@
 
 .nav__link {
   text-decoration: none;
-  font-size: 18px;
+  font-weight: var(--font-regular);
   color: var(--color-dark);
   transition: color 0.3s ease;
 }
