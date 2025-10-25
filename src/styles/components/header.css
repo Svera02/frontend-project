@@ -17,12 +17,17 @@
   padding: 8px 20px;
 }
 
+
 .header__top-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  /* padding-left: 100px;
+  padding-right: 100px; */
+
 }
+
 
 .header__actions {
   display: flex;
@@ -46,7 +51,6 @@
   height: auto;
 }
 
-/* ---------- Нижняя часть ---------- */
 .header__bottom {
   background-color: var(--color-light);
   padding: 20px;
@@ -93,6 +97,20 @@
 .header__icons img {
   width: 20px;
   height: 20px;
+}
+.header__icons button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__top-inner,
+.header__bottom-inner {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 @media (width <= 992px) {

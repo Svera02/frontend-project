@@ -14,6 +14,7 @@
       @import url('./src/styles/colors/dark.css');
     </style>
     <link rel="stylesheet" href="./src/styles/components/header.css" />
+    <link rel="stylesheet" href="./src/styles/components/hero.css" />
   </head>
 
   <body>
@@ -61,6 +62,26 @@
         </div>
       </div>
     </header>
+<section class="hero">
+  <!-- Основная картинка -->
+  <img src="./public/img/top.png" alt="Hero background" class="hero__bg" />
+  
+  <!-- Нижний “оборванный край” -->
+  <img src="./public/img/bottom.png" alt="Hero decoration" class="hero__decoration" />
+
+  <!-- Контент -->
+  <div class="hero__content">
+    <h3 class="hero__subtitle">Good4Me</h3>
+    <h1 class="hero__title">Apple Cider Vinegar</h1>
+    <p class="hero__text">
+      Good4Me Apple Cider Vinegar gummies are the newest addition to your
+      morning health and well-being regime.
+    </p>
+    <button class="hero__button">SHOP NOW</button>
+  </div>
+</section>
+
+
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
