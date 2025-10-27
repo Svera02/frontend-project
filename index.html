@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>GoodMe</title>
     <link rel="stylesheet" href="./src/styles/base/fonts.css" />
 
     <style media="(prefers-color-scheme: light)">
@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="./src/styles/components/products.css" />
     <link rel="stylesheet" href="./src/styles/components/health.css" />
     <link rel="stylesheet" href="./src/styles/components/shop.css" />
+    <link rel="stylesheet" href="./src/styles/components/footer.css" />
+    <link rel="stylesheet" href="./src/styles/components/goodme.css" />
+    <link rel="stylesheet" href="./src/styles/components/news.css" />
+    <link rel="stylesheet" href="./src/styles/components/review.css" />
+    <link rel="stylesheet" href="./src/styles/components/feature.css" />
   </head>
 
   <body>
@@ -80,6 +85,7 @@
         <button class="hero__button">SHOP NOW</button>
       </div>
     </section>
+
     <section class="deal">
       <div class="deal__container">
         <h2 class="deal__title">GOOD4ME DEAL</h2>
@@ -90,7 +96,9 @@
         </p>
       </div>
     </section>
+
     <section class="products">
+      <h2 class="products__title">OUR PRODUCTS ARE</h2>
       <div class="products__inner">
         <div class="products__item products__item--gray">
           <div class="products__image-wrapper">
@@ -119,8 +127,11 @@
           </div>
           <p class="products__text">IRON: ENERGY SUPPORT</p>
         </div>
+
+        <button class="products__btn">VIEW ALL PRODUCTS</button>
       </div>
     </section>
+
     <section class="health">
       <div class="health__container">
         <div class="health__content">
@@ -157,7 +168,7 @@
     </section>
 
     <section class="shop">
-      <h2 class="shop__title">OUR PRODUCTS ARE</h2>
+      <h2 class="shop__title">SHOP ALL</h2>
       <div class="shop__inner">
         <div class="shop__item shop__item--big">
           <div class="shop__image-wrapper shop__image-wrapper--full">
@@ -190,8 +201,289 @@
           <p class="shop__name">APPLE CIDER VINEGAR (3 MONTH SUPPLY)</p>
           <p class="shop__price">$94.95 NZD <span class="shop__old-price">$199.75 NZD</span></p>
         </div>
+
+        <button class="shop__btn">VIEW ALL PRODUCTS</button>
       </div>
     </section>
+
+    <section class="reviews">
+      <img src="./public/img/star.png" alt="" class="reviews__bg" />
+      <img src="./public/img/up.png" alt="" class="reviews__edges--top" />
+      <img src="./public/img/bot.png" alt="" class="reviews__edges--bottom" />
+
+      <div class="reviews__inner">
+        <div class="reviews__content">
+          <h3 class="reviews__subtitle">REAL REVIEWS</h3>
+          <h2 class="reviews__title">REAL RESULTS</h2>
+
+          <div class="reviews__rating">
+            <span class="reviews__star reviews__star--filled"></span>
+            <span class="reviews__star reviews__star--filled"></span>
+            <span class="reviews__star reviews__star--filled"></span>
+            <span class="reviews__star reviews__star--filled"></span>
+            <span class="reviews__star reviews__star--filled"></span>
+          </div>
+
+          <p class="reviews__text">
+            "We have perfected our formulas over time, based on your feedback. Check out hundreds of reviews on our
+            website. We can't wait until you are a part of our Good4Me Family."
+          </p>
+          <p class="reviews__author">_Chloe H.</p>
+
+          <div class="reviews__nav">
+            <button class="reviews__btn reviews__btn--prev" aria-label="Previous review">‹</button>
+            <button class="reviews__btn reviews__btn--next" aria-label="Next review">›</button>
+          </div>
+        </div>
+
+        <div class="reviews__image">
+          <img src="./public/img/nails.png" alt="Good4Me product review" />
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2 class="featured__title">SHOP ALL</h2>
+      <div class="featured__inner">
+        <div class="featured__item featured__item--gray">
+          <div class="featured__image-wrapper">
+            <img src="./public/img/hair.png" alt="PRE-ORDER HAIR, SKIN & NAILS" class="featured__image" />
+          </div>
+          <p class="featured__name">PRE-ORDER HAIR, SKIN & NAILS (5 MONTH SUPPLY)</p>
+          <p class="featured__price">$39.95 NZD <span class="featured__old-price">$199.75 NZD</span></p>
+        </div>
+
+        <div class="featured__item featured__item--gray">
+          <div class="featured__image-wrapper">
+            <img src="./public/img/detox.png" alt="DETOX + BLOAT SUPPORT" class="featured__image" />
+          </div>
+          <p class="featured__name">DETOX + BLOAT SUPPORT VALUE PACK</p>
+          <p class="featured__price">$39.95 NZD <span class="featured__old-price">$199.75 NZD</span></p>
+        </div>
+
+        <div class="featured__item">
+          <div class="featured__image-wrapper featured__image-wrapper--full">
+            <img src="./public/img/probiotics.png" alt="PROBIOTICS" class="featured__image" />
+          </div>
+          <p class="featured__name">PROBIOTICS: GUT HEALTH + BLOAT SUPPORT</p>
+          <p class="featured__price">$39.95 NZD <span class="featured__old-price">$199.75 NZD</span></p>
+        </div>
+
+        <div class="featured__item">
+          <div class="featured__image-wrapper featured__image-wrapper--full">
+            <img src="./public/img/vinegar.png" alt="APPLE CIDER VINEGAR" class="featured__image" />
+          </div>
+          <p class="featured__name">APPLE CIDER VINEGAR</p>
+          <p class="featured__price">$94.95 NZD <span class="featured__old-price">$199.75 NZD</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <h2 class="news__title">LATEST NEWS</h2>
+      <div class="news__list">
+        <article class="news__item">
+          <div class="news__image-wrapper">
+            <img src="./public/img/news1.png" alt="Vitamins on table" class="news__image" />
+          </div>
+          <p class="news__date">August 26, 2020</p>
+          <h3 class="news__subtitle">WE DONATE ONE WEEKS SUPPLY</h3>
+          <p class="news__text">
+            We care about New Zealand children, and we want to support our community by providing our children in need
+            with necessary vitamins to improve...
+          </p>
+          <a href="#" class="news__button">READ MORE</a>
+        </article>
+
+        <article class="news__item">
+          <div class="news__image-wrapper">
+            <img src="./public/img/news2.png" alt="Woman with vitamins" class="news__image" />
+          </div>
+          <p class="news__date">August 26, 2020</p>
+          <h3 class="news__subtitle">WE DONATE ONE WEEKS SUPPLY</h3>
+          <p class="news__text">
+            We care about New Zealand children, and we want to support our community by providing our children in need
+            with necessary vitamins to improve...
+          </p>
+          <a href="#" class="news__button">READ MORE</a>
+        </article>
+
+        <article class="news__item">
+          <div class="news__image-wrapper">
+            <img src="./public/img/news3.png" alt="Vitamins flat lay" class="news__image" />
+          </div>
+          <p class="news__date">August 26, 2020</p>
+          <h3 class="news__subtitle">WE DONATE ONE WEEKS SUPPLY</h3>
+          <p class="news__text">
+            We care about New Zealand children, and we want to support our community by providing our children in need
+            with necessary vitamins to improve...
+          </p>
+          <a href="#" class="news__button">READ MORE</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="good4me-section">
+      <div class="container">
+        <h2 class="good4me-section__title">#GOOD4ME</h2>
+        <div class="good4me-section__gallery">
+          <div class="good4me-section__item">
+            <img
+              src="./public/img/img1.png"
+              alt="Good4Me photo 1"
+              class="good4me-section__image"
+              width="318"
+              height="318"
+            />
+          </div>
+          <div class="good4me-section__item">
+            <img
+              src="./public/img/img2.png"
+              alt="Good4Me photo 2"
+              class="good4me-section__image"
+              width="318"
+              height="318"
+            />
+          </div>
+          <div class="good4me-section__item">
+            <img
+              src="./public/img/img3.png"
+              alt="Good4Me photo 3"
+              class="good4me-section__image"
+              width="318"
+              height="318"
+            />
+          </div>
+          <div class="good4me-section__item">
+            <img
+              src="./public/img/img4.png"
+              alt="Good4Me photo 4"
+              class="good4me-section__image"
+              width="318"
+              height="318"
+            />
+          </div>
+          <div class="good4me-section__item">
+            <img
+              src="./public/img/img5.png"
+              alt="Good4Me photo 5"
+              class="good4me-section__image"
+              width="318"
+              height="318"
+            />
+          </div>
+          <div class="good4me-section__item">
+            <img
+              src="./public/img/img6.png"
+              alt="Good4Me photo 6"
+              class="good4me-section__image"
+              width="318"
+              height="318"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__top-decoration">
+          <img src="./public/img/topp.png" alt="" class="footer__decoration-img" aria-hidden="true" />
+        </div>
+
+        <div class="footer__content">
+          <a href="" class="logo footer__logo">
+            <img src="./public/icons/logo.svg" alt="Logo Goog4Me" width="138" height="32" />
+          </a>
+          <p class="footer__text">
+            Good health is important, so all of our products have been carefully designed to bring out the best in you.
+          </p>
+        </div>
+
+        <form action="" class="footer__subscribe subscribe" novalidate="novalidate">
+          <h2 class="subscribe__title">Keep In Touch</h2>
+          <p class="subscribe__descr">
+            Subscribe to receive new product updates, be the first to know about sales, and more.
+          </p>
+          <div class="subscribe__wrapper">
+            <label class="subscribe__label">
+              <input
+                type="email"
+                name="subscribe-email"
+                class="subscribe__input"
+                placeholder="Enter your email address"
+              />
+            </label>
+            <button class="btn-reset subscribe__btn">Subscribe</button>
+          </div>
+        </form>
+
+        <div class="footer__nav footer-nav">
+          <h2 class="footer-nav__title">More info</h2>
+          <ul class="list-reset footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Shipping &amp; Delivery</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Refund Policy</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Partner Program</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Wholesale Portal</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">You Buy, We Donate</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Privacy Policy</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <ul class="list-reset social">
+          <li class="social__item">
+            <a href="" class="social__link">
+              <img src="./public/icons/twit.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <img src="./public/icons/inst.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <img src="./public/icons/bird.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <img src="./public/icons/pint.svg" alt="Pinterest" />
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link">
+              <img src="./public/icons/youtube.svg" alt="Youtube" />
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">© 2021, <span class="copyright__brand">GOOD4ME</span>. Powered by Shopify</p>
+        </div>
+
+        <div class="footer__pay-ways">
+          <img src="./public/img/payway.png" alt="Pay ways" class="footer__pay-image" width="420" height="24" />
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/src/index.js"></script>
   </body>

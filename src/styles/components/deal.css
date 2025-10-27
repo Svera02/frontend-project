@@ -39,15 +39,15 @@
 
 @media (width <= 768px) {
   .deal {
-    padding: 60px 16px;
+    padding: 20px 16px;
   }
 
   .deal__title {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .deal__text {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .deal__line {
@@ -56,11 +56,20 @@
 }
 
 @media (width <= 480px) {
+  .deal__container {
+    text-align: center;
+    max-width: 600px;
+  }
+
   .deal__title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .deal__text {
-    font-size: 15px;
+    font-size: 10px;
+  }
+
+  .deal__line {
+    width: 40px;
   }
 }

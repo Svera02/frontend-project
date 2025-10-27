@@ -1,0 +1,80 @@
+.good4me-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: var(--color-white, #fff);
+}
+
+.good4me-section__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 42px;
+  color: var(--color-dark, #000);
+  margin: 0 0 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.good4me-section__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 -5px;
+}
+
+.good4me-section__item {
+  flex: 1 0 calc((100% - 50px) / 6);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.good4me-section__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (width <= 768px) {
+  .good4me-section {
+    padding: 60px 0;
+  }
+
+  .good4me-section__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .good4me-section__item {
+    flex: 1 0 calc((100% - 20px) / 3);
+  }
+}
+
+@media (width <= 576px) {
+  .good4me-section {
+    padding: 40px 0;
+  }
+
+  .good4me-section__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .good4me-section__item {
+    flex: 1 0 calc((100% - 10px) / 2);
+  }
+}
+
+@media (width <= 480px) {
+  .good4me-section__title {
+    font-size: 28px;
+  }
+
+  .good4me-section__item {
+    flex: 1 0 100%;
+  }
+
+  .good4me-section__gallery {
+    gap: 8px;
+    margin: 0 -4px;
+  }
+}

@@ -1,0 +1,123 @@
+:root {
+  --color-dark: #000;
+  --color-text: #454545;
+  --color-accent: #f6623e;
+  --color-bg: #fff;
+  --font-family: 'Jost', sans-serif;
+}
+
+.news {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.news__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--color-dark);
+  margin-bottom: 40px;
+}
+
+.news__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.news__item {
+  width: 350px;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.news__image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.news__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news__date {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--color-accent);
+  margin-top: 15px;
+}
+
+.news__subtitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-dark);
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.news__text {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.4;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.news__button {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.news__button:hover {
+  background-color: #d6522d;
+}
+
+@media (width <= 992px) {
+  .news__item {
+    width: 45%;
+  }
+}
+
+@media (width <= 768px) {
+  .news__item {
+    width: 100%;
+  }
+
+  .news__image-wrapper {
+    height: 200px;
+  }
+
+  .news__subtitle {
+    font-size: 16px;
+  }
+
+  .news__text {
+    font-size: 13px;
+  }
+
+  .news__button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
