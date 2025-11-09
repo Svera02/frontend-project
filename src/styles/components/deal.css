@@ -4,12 +4,16 @@
   justify-content: center;
   align-items: center;
   padding: 80px 20px;
-  background-color: #fff;
+  background-color: var(--color-white);
+  box-sizing: border-box;
 }
 
 .deal__container {
   text-align: center;
   max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .deal__title {
@@ -17,14 +21,14 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 89%;
-  color: #000;
+  color: var(--color-black);
   margin-bottom: 16px;
 }
 
 .deal__line {
   width: 80px;
   height: 3px;
-  background-color: var(--color-accent, #f6623e);
+  background-color: var(--color-accent);
   margin: 0 auto 24px;
 }
 
@@ -42,6 +46,11 @@
     padding: 20px 16px;
   }
 
+  .deal__container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
   .deal__title {
     font-size: 20px;
   }
@@ -57,12 +66,13 @@
 
 @media (width <= 480px) {
   .deal__container {
-    text-align: center;
-    max-width: 600px;
+    max-width: 100%;
+
+    /* padding: 0 5px; */
   }
 
   .deal__title {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .deal__text {

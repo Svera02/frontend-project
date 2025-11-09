@@ -53,7 +53,7 @@
 }
 
 .featured__item--gray .featured__image-wrapper {
-  background-color: #f4f4f4;
+  background-color: var(--border-default);
   padding: 20px;
   width: 290px;
   flex: none;
@@ -84,7 +84,7 @@
   font-weight: var(--font-medium);
   font-size: 14px;
   line-height: 1.2;
-  color: #000;
+  color: var(--color-black);
   text-align: center;
   padding: 10px 0 0;
   box-sizing: border-box;
@@ -99,65 +99,16 @@
   box-sizing: border-box;
   width: 100%;
   text-align: center;
+  padding-top: 10px;
 }
 
 .featured__old-price {
   font-weight: var(--font-regular);
   font-size: 14px;
-  color: #9d9d9d;
+  color: var(--color-old);
   text-decoration: line-through;
   padding-left: 5px;
   box-sizing: border-box;
-}
-
-@media (width <= 1200px) {
-  .featured__inner {
-    gap: 20px;
-  }
-}
-
-@media (width <= 992px) {
-  .featured__item,
-  .featured__item--big,
-  .featured__item--gray {
-    width: 290px;
-    flex: none;
-  }
-
-  .featured__image-wrapper {
-    height: 220px;
-    width: 290px;
-  }
-
-  .featured__item--gray .featured__image-wrapper,
-  .featured__image-wrapper--full {
-    width: 290px;
-  }
-
-  .featured__image {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-  }
-
-  .featured__image-wrapper--full .featured__image {
-    object-fit: contain;
-  }
-
-  .featured__name {
-    font-size: 16px;
-    padding: 2px 0;
-  }
-
-  .featured__price {
-    font-size: 14px;
-  }
-
-  .featured__old-price {
-    font-size: 12px;
-  }
 }
 
 @media (width <= 768px) {
@@ -205,30 +156,33 @@
 }
 
 @media (width <= 480px) {
-  .featured__item,
-  .featured__item--big,
-  .featured__item--gray {
-    width: 280px;
-    flex: none;
-  }
-
-  .featured__image-wrapper {
-    height: 200px;
-    width: 280px;
-  }
-
-  .featured__item--gray .featured__image-wrapper,
-  .featured__image-wrapper--full {
-    width: 280px;
+  .featured__title {
+    font-size: 15px;
   }
 
   .featured__name {
-    font-size: 14px;
-    padding: 4px 0 2px;
+    font-size: 10px;
+  }
+
+  .featured__item {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+
+  .featured__image-wrapper {
+    height: 140px;
+  }
+
+  .featured__item--gray .featured__image-wrapper {
+    max-width: 150px;
+  }
+
+  .featured__inner {
+    gap: 10px;
   }
 
   .featured__price,
   .featured__old-price {
-    font-size: 12px;
+    font-size: 10px;
   }
 }

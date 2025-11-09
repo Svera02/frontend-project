@@ -1,0 +1,30 @@
+.nav__list {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: var(--font-regular);
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: var(--color-accent);
+}
+
+@media (width <= 480px) {
+  .nav__link {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+
+  .nav__list {
+    gap: 8px;
+  }
+}

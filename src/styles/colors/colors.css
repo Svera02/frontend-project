@@ -1,4 +1,11 @@
 :root {
-  --color-white: #e3e3e3;
+  --color-white: #fff;
   --color-black: #1d1d1d;
+  --color-dark: #2a254b;
+  --color-accent: #f6623e;
+  --border-default: #f4f3f4;
+  --color-bg-light: #fff4f1;
+  --color-old: #9d9d9d;
+  --color-text: #454545;
+  --color-star: #ffd700;
 }

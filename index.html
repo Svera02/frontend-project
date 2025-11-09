@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoodMe</title>
     <link rel="stylesheet" href="./src/styles/base/fonts.css" />
+    <link rel="stylesheet" href="./src/styles/colors/colors.css" />
 
     <style media="(prefers-color-scheme: light)">
       @import url('./src/styles/colors/light.css');
@@ -14,12 +15,16 @@
       @import url('./src/styles/colors/dark.css');
     </style>
     <link rel="stylesheet" href="./src/styles/components/header.css" />
+    <link rel="stylesheet" href="./src/styles/components/navigation.css" />
     <link rel="stylesheet" href="./src/styles/components/hero.css" />
     <link rel="stylesheet" href="./src/styles/components/deal.css" />
     <link rel="stylesheet" href="./src/styles/components/products.css" />
     <link rel="stylesheet" href="./src/styles/components/health.css" />
     <link rel="stylesheet" href="./src/styles/components/shop.css" />
     <link rel="stylesheet" href="./src/styles/components/footer.css" />
+    <link rel="stylesheet" href="./src/styles/components/social.css" />
+    <link rel="stylesheet" href="./src/styles/components/subscribe.css" />
+    <link rel="stylesheet" href="./src/styles/components/copyright.css" />
     <link rel="stylesheet" href="./src/styles/components/goodme.css" />
     <link rel="stylesheet" href="./src/styles/components/news.css" />
     <link rel="stylesheet" href="./src/styles/components/review.css" />
@@ -33,9 +38,11 @@
           <p class="header__promo">Afterpay, Laybuy & Genoapay | Free Delivery New Zealand + Australia*</p>
           <div class="header__actions">
             <a href="#" class="header__link">Sign In / Register</a>
+            <span class="header__divider">|</span>
             <div class="header__lang">
               <img src="./public/icons/flag.svg" alt="Language" class="header__flag" />
               <span class="header__currency">USD</span>
+              <span class="header__dropdown-arrow">▼</span>
             </div>
           </div>
         </div>
@@ -66,6 +73,7 @@
             </button>
             <button class="header__cart">
               <img src="./public/icons/buy.svg" alt="Cart" />
+              <span class="header__cart-count">0</span>
             </button>
           </div>
         </div>
@@ -168,7 +176,7 @@
     </section>
 
     <section class="shop">
-      <h2 class="shop__title">SHOP ALL</h2>
+      <h2 class="shop__title">OUR PRODUCTS ARE</h2>
       <div class="shop__inner">
         <div class="shop__item shop__item--big">
           <div class="shop__image-wrapper shop__image-wrapper--full">
@@ -208,8 +216,8 @@
 
     <section class="reviews">
       <img src="./public/img/star.png" alt="" class="reviews__bg" />
-      <img src="./public/img/up.png" alt="" class="reviews__edges--top" />
-      <img src="./public/img/bot.png" alt="" class="reviews__edges--bottom" />
+      <img src="./public/img/up.png" alt="" class="reviews__edges reviews__edges--top" />
+      <img src="./public/img/bot.png" alt="" class="reviews__edges reviews__edges--bottom" />
 
       <div class="reviews__inner">
         <div class="reviews__content">
@@ -231,8 +239,8 @@
           <p class="reviews__author">_Chloe H.</p>
 
           <div class="reviews__nav">
-            <button class="reviews__btn reviews__btn--prev" aria-label="Previous review">‹</button>
-            <button class="reviews__btn reviews__btn--next" aria-label="Next review">›</button>
+            <button class="reviews__btn--prev" aria-label="Previous review">‹</button>
+            <button class="reviews__btn--next" aria-label="Next review">›</button>
           </div>
         </div>
 
@@ -403,7 +411,8 @@
         <form action="" class="footer__subscribe subscribe" novalidate="novalidate">
           <h2 class="subscribe__title">Keep In Touch</h2>
           <p class="subscribe__descr">
-            Subscribe to receive new product updates, be the first to know about sales, and more.
+            Subscribe to receive new product updates, be the <br />
+            first to know about sales, and more.
           </p>
           <div class="subscribe__wrapper">
             <label class="subscribe__label">
@@ -447,6 +456,7 @@
       </div>
 
       <div class="container footer__bottom">
+        <div class="footer__divider"></div>
         <ul class="list-reset social">
           <li class="social__item">
             <a href="" class="social__link">
@@ -485,6 +495,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/src/index.js"></script>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>

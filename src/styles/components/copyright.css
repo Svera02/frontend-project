@@ -1,0 +1,17 @@
+.copyright__text {
+  padding: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-black);
+}
+
+.copyright__brand {
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+@media (width <= 768px) {
+  .copyright__text {
+    font-size: 8px;
+  }
+}

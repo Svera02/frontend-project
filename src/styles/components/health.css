@@ -1,10 +1,5 @@
 :root {
   --font-family: 'Jost', sans-serif;
-  --color-dark: #000;
-  --color-text: #454545;
-  --color-accent: #f6623e;
-  --color-bg-light: #fff4f1;
-  --color-white: #fff;
 }
 
 .health {
@@ -66,7 +61,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: var(--color-text);
+  color: var(--color-black);
   margin-bottom: 18px;
 }
 
