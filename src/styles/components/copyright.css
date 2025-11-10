@@ -10,8 +10,34 @@
   color: var(--color-accent);
 }
 
+@media (width <= 1200px) {
+  .copyright__text {
+    font-size: 14px;
+  }
+}
+
+@media (width <= 992px) {
+  .copyright__text {
+    font-size: 12px;
+  }
+}
+
 @media (width <= 768px) {
   .copyright__text {
-    font-size: 8px;
+    font-size: 4px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (width <= 480px) {
+  .copyright__text {
+    font-size: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

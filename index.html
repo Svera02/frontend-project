@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="./src/styles/base/fonts.css" />
     <link rel="stylesheet" href="./src/styles/colors/colors.css" />
 
-    <style media="(prefers-color-scheme: light)">
+    <!-- <style media="(prefers-color-scheme: light)">
       @import url('./src/styles/colors/light.css');
     </style>
     <style media="(prefers-color-scheme: dark)">
       @import url('./src/styles/colors/dark.css');
-    </style>
+    </style>  -->
+    <link rel="stylesheet" href="./src/styles/components/header.css" />
+
     <link rel="stylesheet" href="./src/styles/components/header.css" />
     <link rel="stylesheet" href="./src/styles/components/navigation.css" />
     <link rel="stylesheet" href="./src/styles/components/hero.css" />
     <link rel="stylesheet" href="./src/styles/components/deal.css" />
     <link rel="stylesheet" href="./src/styles/components/products.css" />
+    <link rel="stylesheet" href="./src/styles/components/benefits.css" />
     <link rel="stylesheet" href="./src/styles/components/health.css" />
     <link rel="stylesheet" href="./src/styles/components/shop.css" />
     <link rel="stylesheet" href="./src/styles/components/footer.css" />
@@ -41,7 +44,7 @@
             <span class="header__divider">|</span>
             <div class="header__lang">
               <img src="./public/icons/flag.svg" alt="Language" class="header__flag" />
-              <span class="header__currency">USD</span>
+              <span class="header__link">USD</span>
               <span class="header__dropdown-arrow">▼</span>
             </div>
           </div>
@@ -106,7 +109,6 @@
     </section>
 
     <section class="products">
-      <h2 class="products__title">OUR PRODUCTS ARE</h2>
       <div class="products__inner">
         <div class="products__item products__item--gray">
           <div class="products__image-wrapper">
@@ -135,8 +137,43 @@
           </div>
           <p class="products__text">IRON: ENERGY SUPPORT</p>
         </div>
+      </div>
+    </section>
 
-        <button class="products__btn">VIEW ALL PRODUCTS</button>
+    <section class="benefits">
+      <div class="benefits__inner">
+        <div class="benefits__item">
+          <div class="benefits__circle">
+            <img src="./public/icons/airplane.svg" alt="Worldwide Shipping" class="benefits__icon" />
+          </div>
+          <h3 class="benefits__title">WORLDWIDE SHIPPING</h3>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetuer <br />
+            adipiscing elit. Aenean
+          </p>
+        </div>
+
+        <div class="benefits__item">
+          <div class="benefits__circle">
+            <img src="./public/icons/money.svg" alt="30 Days Guarantee" class="benefits__icon" />
+          </div>
+          <h3 class="benefits__title">30 DAYS GUARANTEE</h3>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetuer <br />
+            adipiscing elit. Aenean
+          </p>
+        </div>
+
+        <div class="benefits__item">
+          <div class="benefits__circle">
+            <img src="./public/icons/lock.svg" alt="Secured Payments" class="benefits__icon" />
+          </div>
+          <h3 class="benefits__title">SECURED PAYMENTS</h3>
+          <p class="benefits__text">
+            Lorem ipsum dolor sit amet, consectetuer <br />
+            adipiscing elit. Aenean
+          </p>
+        </div>
       </div>
     </section>
 
@@ -284,6 +321,7 @@
           <p class="featured__name">APPLE CIDER VINEGAR</p>
           <p class="featured__price">$94.95 NZD <span class="featured__old-price">$199.75 NZD</span></p>
         </div>
+        <button class="feature__btn">VIEW ALL PRODUCTS</button>
       </div>
     </section>
 

@@ -1,14 +1,14 @@
 .good4me-section {
   width: 100%;
   padding: 80px 0;
-  background-color: var(--color-white);
+  color: var(--color-white);
 }
 
 .good4me-section__title {
   text-align: center;
   font-weight: 600;
   font-size: 42px;
-  color: var(--color-dark);
+  color: var(--color-text);
   margin: 0 0 60px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -32,6 +32,21 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media (width <= 1200px) {
+  .good4me-section {
+    padding: 70px 0;
+  }
+
+  .good4me-section__title {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+
+  .good4me-section__item {
+    flex: 1 0 calc((100% - 30px) / 3);
+  }
 }
 
 @media (width <= 768px) {
@@ -61,5 +76,26 @@
   .good4me-section__gallery {
     gap: 10px;
     margin: 0 -5px;
+  }
+}
+
+@media (width <= 360px) {
+  .good4me-section {
+    padding: 40px 0;
+  }
+
+  .good4me-section__title {
+    font-size: 20px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+  }
+
+  .good4me-section__item {
+    flex: 1 0 calc(50% - 5px);
+  }
+
+  .good4me-section__gallery {
+    gap: 5px;
+    margin: 0 -2.5px;
   }
 }

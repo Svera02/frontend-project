@@ -9,6 +9,7 @@
 
 .featured__title {
   font-weight: var(--font-medium);
+  color: var(--color-text);
   font-size: 36px;
   text-align: center;
   padding-bottom: 20px;
@@ -84,7 +85,7 @@
   font-weight: var(--font-medium);
   font-size: 14px;
   line-height: 1.2;
-  color: var(--color-black);
+  color: var(--color-text);
   text-align: center;
   padding: 10px 0 0;
   box-sizing: border-box;
@@ -109,6 +110,56 @@
   text-decoration: line-through;
   padding-left: 5px;
   box-sizing: border-box;
+}
+
+.feature__btn {
+  display: inline-block;
+  width: 254px;
+  height: 56px;
+  background-color: var(--color-light);
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: Jost, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 52px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.feature__btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+}
+
+@media (width <= 1200px) {
+  .featured__inner {
+    gap: 25px;
+    max-width: 1200px;
+  }
+
+  .featured__item,
+  .featured__item--big {
+    width: 280px;
+  }
+
+  .featured__image-wrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .featured__item--gray .featured__image-wrapper,
+  .featured__image-wrapper--full {
+    width: 280px;
+  }
+
+  .featured__title {
+    font-size: 32px;
+  }
 }
 
 @media (width <= 768px) {
@@ -177,6 +228,10 @@
     max-width: 150px;
   }
 
+  .featured__image-wrapper--full {
+    max-height: 150px;
+  }
+
   .featured__inner {
     gap: 10px;
   }
@@ -184,5 +239,60 @@
   .featured__price,
   .featured__old-price {
     font-size: 10px;
+  }
+
+  .feature__btn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 8px;
+  }
+}
+
+@media (width <= 360px) {
+  .featured {
+    padding: 15px 10px;
+  }
+
+  .featured__title {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .featured__inner {
+    gap: 8px;
+  }
+
+  .featured__item {
+    flex: 1 1 calc(50% - 4px);
+    max-width: calc(50% - 4px);
+    width: auto;
+    padding: 5px;
+  }
+
+  .featured__image-wrapper {
+    height: 120px;
+    width: 100%;
+  }
+
+  .featured__item--gray .featured__image-wrapper,
+  .featured__image-wrapper--full {
+    width: 100%;
+    max-width: none;
+  }
+
+  .featured__image-wrapper--full {
+    max-height: 120px;
+  }
+
+  .featured__name {
+    font-size: 9px;
+    padding: 5px 0 0;
+  }
+
+  .featured__price,
+  .featured__old-price {
+    font-size: 9px;
+    padding-top: 3px;
   }
 }
